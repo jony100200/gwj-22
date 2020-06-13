@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/attackUnarmed_2.png-89050c217cb45392947456c1bc6f186c.res"
+group_file="res://atlas/player_atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://player/attackUnarmed_2.png"
+dest_files=[ "res://.import/attackUnarmed_2.png-89050c217cb45392947456c1bc6f186c.res" ]
+
+[params]
+
+atlas_file="res://atlas/player_atlas.png"
+import_mode=0

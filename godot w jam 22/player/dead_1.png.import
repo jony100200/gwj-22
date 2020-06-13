@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/dead_1.png-6e546c0f17f090a2862bb02883dbdcde.res"
+group_file="res://atlas/player_atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://player/dead_1.png"
+dest_files=[ "res://.import/dead_1.png-6e546c0f17f090a2862bb02883dbdcde.res" ]
+
+[params]
+
+atlas_file="res://atlas/player_atlas.png"
+import_mode=0

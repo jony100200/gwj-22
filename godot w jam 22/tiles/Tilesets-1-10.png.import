@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Tilesets-1-10.png-e9b028424eec888a6e40f115041f9af3.res"
+group_file="res://atlas/tileset1.png"
+valid=true
+[deps]
+
+
+source_file="res://tiles/Tilesets-1-10.png"
+dest_files=[ "res://.import/Tilesets-1-10.png-e9b028424eec888a6e40f115041f9af3.res" ]
+
+[params]
+
+atlas_file="res://atlas/tileset1.png"
+import_mode=0
