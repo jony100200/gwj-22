@@ -12,11 +12,11 @@ func _physics_process(delta):
 	
 
 func update_movement():
-	if Input.is_action_pressed("move_right"):
+	if Input.is_action_pressed("move_right") and  not Input.is_action_just_pressed("move_left"):
 		motion.x = SPEED
 		skeleton.set("playback/curr_animation", "walk")
 		skeleton.play(true)
-	if Input.is_action_just_pressed("move_left"):
+	if Input.is_action_just_pressed("move_left") and  not Input.is_action_just_pressed("move_right"):
 		motion.x -= SPEED
 		#flipX(true)
 		skeleton.set("playback/curr_animation", "walk")
