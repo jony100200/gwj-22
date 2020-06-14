@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/graveBurst_1.png-6b3359f3f9e71c6a1201487ba4cb9c4e.res"
+group_file="res://atlas/player_atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://player/graveBurst_1.png"
+dest_files=[ "res://.import/graveBurst_1.png-6b3359f3f9e71c6a1201487ba4cb9c4e.res" ]
+
+[params]
+
+atlas_file="res://atlas/player_atlas.png"
+import_mode=0
