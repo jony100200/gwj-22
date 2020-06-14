@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/bannerIdle_1.png-11a85a39d95a5a9a6fa4e8b3950a8407.res"
+group_file="res://atlas/player_atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://placeholders/player/bannerIdle_1.png"
+dest_files=[ "res://.import/bannerIdle_1.png-11a85a39d95a5a9a6fa4e8b3950a8407.res" ]
+
+[params]
+
+atlas_file="res://atlas/player_atlas.png"
+import_mode=0

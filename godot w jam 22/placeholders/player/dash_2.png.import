@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/dash_2.png-75e83d667a161a8746502bf01a73632e.res"
+group_file="res://atlas/player_atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://placeholders/player/dash_2.png"
+dest_files=[ "res://.import/dash_2.png-75e83d667a161a8746502bf01a73632e.res" ]
+
+[params]
+
+atlas_file="res://atlas/player_atlas.png"
+import_mode=0

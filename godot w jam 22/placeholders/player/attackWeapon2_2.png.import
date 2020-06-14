@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/attackWeapon2_2.png-031451065e110dc4bb827e7da72904e5.res"
+group_file="res://atlas/player_atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://placeholders/player/attackWeapon2_2.png"
+dest_files=[ "res://.import/attackWeapon2_2.png-031451065e110dc4bb827e7da72904e5.res" ]
+
+[params]
+
+atlas_file="res://atlas/player_atlas.png"
+import_mode=0

@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://scenes/player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/player/SnowWhite.tscn" type="PackedScene" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 1111.34, 10 )
@@ -16,3 +17,6 @@ position = Vector2( 348.171, 1021.58 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 608.155, 35.9993 )
 shape = SubResource( 1 )
+
+[node name="Player" parent="StaticBody2D/CollisionShape2D" instance=ExtResource( 2 )]
+position = Vector2( 3.65625, -174.519 )

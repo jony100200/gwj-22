@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/idle_weapon_1.png-670c79a09878f432d5c0b31853e84ac6.res"
+group_file="res://atlas/player_atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://placeholders/player/idle_weapon_1.png"
+dest_files=[ "res://.import/idle_weapon_1.png-670c79a09878f432d5c0b31853e84ac6.res" ]
+
+[params]
+
+atlas_file="res://atlas/player_atlas.png"
+import_mode=0
