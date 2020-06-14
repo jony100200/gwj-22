@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scripts/CharTemplate.gd" type="Script" id=1]
+[ext_resource path="res://char_bone/SwordsMan_ske.json" type="GDDragonBonesResource" id=2]
+[ext_resource path="res://char_bone/SwordsMan_tex.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 182.782, 296.531 )
+
+[node name="CharTemplate" type="KinematicBody2D"]
+position = Vector2( 907.143, 816.429 )
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -5.25427, -288.651 )
+skew = 4.37114e-08
+shape = SubResource( 1 )
+
+[node name="Robot" type="GDDragonBones" parent="."]
+position = Vector2( 0, -21.3816 )
+texture = ExtResource( 3 )
+resource = ExtResource( 2 )
