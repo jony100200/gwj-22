@@ -19,6 +19,8 @@ radius = 32.114
 [node name="Player" type="KinematicBody2D" groups=[
 "player",
 ]]
+collision_layer = 2
+collision_mask = 4
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -28,23 +30,25 @@ shape = SubResource( 1 )
 [node name="player" type="Sprite" parent="."]
 position = Vector2( -2.52271, 0 )
 scale = Vector2( 0.15, 0.15 )
-skew = 4.37114e-08
 texture = ExtResource( 5 )
 region_enabled = true
 region_rect = Rect2( 259, 202, 1030, 1457 )
 
 [node name="Hitbox" parent="." instance=ExtResource( 3 )]
 position = Vector2( -2.22539, 0 )
+collision_layer = 8
+collision_mask = 64
 
 [node name="CollisionShape2D" parent="Hitbox" index="0"]
 shape = SubResource( 2 )
 
 [node name="Hurtbox" parent="." instance=ExtResource( 4 )]
 position = Vector2( -0.13, 0 )
+collision_layer = 32
+collision_mask = 16
 
 [node name="CollisionShape2D" parent="Hurtbox" index="0"]
 shape = SubResource( 3 )
-disabled = true
 
 [editable path="Hitbox"]
 

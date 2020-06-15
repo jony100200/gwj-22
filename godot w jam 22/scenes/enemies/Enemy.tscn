@@ -1,0 +1,77 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://scenes/Hitbox.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/Hurtbox.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/enemies/Enemy.gd" type="Script" id=3]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 44.4832
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 84.1064
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 101.842
+
+[sub_resource type="CapsuleShape2D" id=4]
+radius = 255.865
+
+[node name="Enemy" type="KinematicBody2D"]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource( 3 )
+
+[node name="enemy" type="Sprite" parent="."]
+scale = Vector2( 0.15, 0.15 )
+region_enabled = true
+region_rect = Rect2( 259, 202, 1030, 1457 )
+
+[node name="Hitbox" parent="." instance=ExtResource( 1 )]
+visible = false
+position = Vector2( -12.3897, -5.05672 )
+collision_layer = 16
+collision_mask = 32
+
+[node name="CollisionShape2D" parent="Hitbox" index="0"]
+shape = SubResource( 1 )
+
+[node name="Hurtbox" parent="." instance=ExtResource( 2 )]
+visible = false
+position = Vector2( -11.7272, -9.77255 )
+collision_layer = 64
+collision_mask = 8
+
+[node name="CollisionShape2D" parent="Hurtbox" index="0"]
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource( 3 )
+
+[node name="PlayerDetector" type="Area2D" parent="."]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetector"]
+shape = SubResource( 4 )
+
+[node name="WanderTimer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
+[node name="WallDetector" type="Node2D" parent="."]
+
+[node name="RayCast2D" type="RayCast2D" parent="WallDetector"]
+enabled = true
+cast_to = Vector2( 50, 0 )
+
+[node name="RayCast2D2" type="RayCast2D" parent="WallDetector"]
+enabled = true
+cast_to = Vector2( -50, 0 )
+collision_mask = 2
+[connection signal="body_entered" from="PlayerDetector" to="." method="_on_PlayerDetector_body_entered"]
+[connection signal="body_exited" from="PlayerDetector" to="." method="_on_PlayerDetector_body_exited"]
+[connection signal="timeout" from="WanderTimer" to="." method="_on_WanderTimer_timeout"]
+
+[editable path="Hitbox"]
+
+[editable path="Hurtbox"]
