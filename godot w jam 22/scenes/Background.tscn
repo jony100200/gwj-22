@@ -1,0 +1,140 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets/background/BG pattern.png" type="Texture" id=1]
+[ext_resource path="res://assets/background/BG 1.png" type="Texture" id=2]
+[ext_resource path="res://assets/background/BG 2.png" type="Texture" id=3]
+[ext_resource path="res://assets/background/BG 3.png" type="Texture" id=4]
+[ext_resource path="res://assets/background/Grass.png" type="Texture" id=5]
+[ext_resource path="res://assets/background/BG 1.5.png" type="Texture" id=6]
+[ext_resource path="res://assets/background/Ground.png" type="Texture" id=7]
+[ext_resource path="res://assets/background/Fog.png" type="Texture" id=8]
+
+[node name="Background" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+offset = Vector2( 0, -50 )
+transform = Transform2D( 1, 0, 0, 1, 0, -50 )
+scroll_base_scale = Vector2( 1, 0 )
+
+[node name="Pattern BG" type="ParallaxLayer" parent="ParallaxBackground"]
+skew = 4.37114e-08
+motion_scale = Vector2( 0.05, 0.05 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/Pattern BG"]
+position = Vector2( 3.63798e-12, 0 )
+skew = 4.37114e-08
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 99999, 2048 )
+
+[node name="Layer1" type="ParallaxLayer" parent="ParallaxBackground"]
+skew = 4.37114e-08
+motion_scale = Vector2( 0.1, 0.1 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/Layer1"]
+position = Vector2( 1.27371e-06, -86.4436 )
+scale = Vector2( 1, 0.6 )
+skew = 4.37114e-08
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 99999, 2048 )
+
+[node name="Layer15" type="ParallaxLayer" parent="ParallaxBackground"]
+skew = 4.37114e-08
+motion_scale = Vector2( 0.2, 0.2 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/Layer15"]
+position = Vector2( 1.05424e-05, 50 )
+scale = Vector2( 1, 0.6 )
+skew = 4.37114e-08
+texture = ExtResource( 6 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 99999, 2048 )
+
+[node name="Fog" type="ParallaxLayer" parent="ParallaxBackground"]
+modulate = Color( 0.72549, 0.478431, 0.862745, 0.811765 )
+position = Vector2( 0, -245.015 )
+skew = 4.37114e-08
+motion_scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/Fog"]
+position = Vector2( 80.0904, 584.349 )
+scale = Vector2( 1, 0.6 )
+skew = 4.37114e-08
+texture = ExtResource( 8 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 99999, 2048 )
+
+[node name="Layer2" type="ParallaxLayer" parent="ParallaxBackground"]
+skew = 4.37114e-08
+motion_scale = Vector2( 0.4, 0.4 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/Layer2"]
+position = Vector2( 1.6216e-05, 266.328 )
+scale = Vector2( 1, 0.6 )
+skew = 4.37114e-08
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 99999, 2048 )
+
+[node name="Fog2" type="ParallaxLayer" parent="ParallaxBackground"]
+modulate = Color( 0.698039, 0.741176, 0.890196, 0.407843 )
+position = Vector2( 0, -86.4436 )
+skew = 4.37114e-08
+motion_scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/Fog2"]
+position = Vector2( 2.27953e-05, 534.31 )
+scale = Vector2( 1, 0.6 )
+skew = 4.37114e-08
+texture = ExtResource( 8 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 99999, 2048 )
+
+[node name="Layer3" type="ParallaxLayer" parent="ParallaxBackground"]
+skew = 4.37114e-08
+motion_scale = Vector2( 0.6, 0.6 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/Layer3"]
+position = Vector2( 1.24657e-05, 246.738 )
+scale = Vector2( 1, 0.6 )
+skew = 4.37114e-08
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 99999, 2048 )
+
+[node name="Fog3" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2( 0, 38.1478 )
+skew = 4.37114e-08
+motion_scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/Fog3"]
+position = Vector2( 2.73744e-05, 626.252 )
+scale = Vector2( 1, 0.6 )
+skew = 4.37114e-08
+texture = ExtResource( 8 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 99999, 2048 )
+
+[node name="Grass" type="ParallaxLayer" parent="ParallaxBackground"]
+skew = 4.37114e-08
+motion_scale = Vector2( 0.9, 0.9 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/Grass"]
+position = Vector2( 1.16843e-05, 445.509 )
+scale = Vector2( 1, 0.6 )
+skew = 4.37114e-08
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 99999, 2048 )
+
+[node name="Ground" type="ParallaxLayer" parent="ParallaxBackground"]
+skew = 4.37114e-08
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/Ground"]
+position = Vector2( 2.30777e-05, 527.956 )
+scale = Vector2( 1, 0.6 )
+skew = 4.37114e-08
+texture = ExtResource( 7 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 99999, 2048 )

@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
+[ext_resource path="res://scenes/player/Camera.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/player/Player.gd" type="Script" id=2]
 [ext_resource path="res://scenes/Hitbox.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/Hurtbox.tscn" type="PackedScene" id=4]
@@ -49,6 +50,8 @@ collision_mask = 16
 
 [node name="CollisionShape2D" parent="Hurtbox" index="0"]
 shape = SubResource( 3 )
+
+[node name="Camera" parent="." instance=ExtResource( 1 )]
 
 [editable path="Hitbox"]
 
